@@ -9,20 +9,20 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://te.legra.ph/file/7c2fb6164da45d904f354.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən @BanditosQrup'u üçün hazırlanmış musiqi botuyam!\nDigər Qruplara Girməyə icazəm yoxdur.\n\nSahibim 👉  [HÜSÜ](https://t.me/HusuSovetski)**"""),
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən Qruplar üçün hazırlanmış musiqi botuyam!\n Bot @Vusaliw Tərəfindən 0dan tərcümə edilib.\n\nSahibim 👉 [Bakılı](https://t.me/o7o_BaKiLi)**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Onsuzda Əlavə eliyəmmiyəcəysən 🙁", url=f"https://t.me/BanditosMusiqi?startgroup=true"
+                        "Qrupa Əlavə et 🧨", url=f"http://t.me/BakiliMusicRobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎭 Asistant", url="https://t.me/BanditosMusiqiAsistant"
+                        "🎭 Asistant", url="https://t.me/BakiliMusicAssistant"
                     ),
                     InlineKeyboardButton(
-                        "🔥 Qrup", url="https://t.me/BanditosQrup"
+                        "🔥 Qrup", url="https://t.me/azeqafqaz202"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "☄️ Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Owner 🇦🇿", url=f"https://t.me/HusuSovetski"
+                        "Sahib 🇦🇿", url=f"https://t.me/o7o_BaKiLi"
                     )
                 ]
                 
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "Geri 🔄", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "Qrup ☘️", url="https://t.me/BanditosQrup")
+                         "Qrup ☘️", url="https://t.me/azeqafqaz202")
                  ]
              ]
          )
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "Sahib 🇦🇿", url="https://t.me/HusuSovetski")
+            "Sahib 🇦🇿", url="https://t.me/o7o_BaKiLi")
         ]
       ]
      ))
@@ -95,7 +95,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "Sahib 🇦🇿", url="https://t.me/HusuSovetski")
+                         "Sahib 🇦🇿", url="https://t.me/o7o_BaKiLi")
                  ],
                  [
                      InlineKeyboardButton(
@@ -113,7 +113,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "Qrup ⛓️", url="https://t.me/BanditosQrup")
+                         "Qrup ⛓️", url="https://t.me/azeqafqaz202")
                  ],
                  [
                      InlineKeyboardButton(
@@ -126,20 +126,20 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən @BanditosQrup'u üçün hazırlanmış musiqi botuyam.\Digər Qruplara Girməyə icazəm yoxdur.\n\nSahibim👉  [HÜSÜ](https://t.me/HusuSovetski)**""",
+    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən Qruplar üçün hazırlanmış musiqi botuyam.\Bot @Vusaliw Tərəfindən 0dan tərcümə edilib.\n\nSahibim👉  [HÜSÜ](https://t.me/HusuSovetski)**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Onsuzda Qrupa əlavə eliyəmmiyəcəysən 🙁", url=f"https://t.me/BanditosMusiqiBot?startgroup=true"
+                        "Qrupa Əlavə Et 🧨", url=f"http://t.me/BakiliMusicRobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎭 Asistant", url="https://t.me/BanditosMusiqiAsistant"
+                        "🎭 Asistant", url="https://t.me/BakiliMusicAssistant"
                     ),
                     InlineKeyboardButton(
-                        "⚡ Qrup", url="https://t.me/BanditosQrup"
+                        "⚡ Qrup", url="https://t.me/azeqafqaz202"
                     )
                 ],
                 [
@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "☄️ Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Owner 🇦🇿", url=f"https://t.me/HusuSovetski"
+                        "Sahib 🇦🇿", url=f"https://t.me/o7o_BaKiLi"
                     )
                 ]
                 
