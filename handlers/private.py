@@ -8,7 +8,7 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://te.legra.ph/file/7c2fb6164da45d904f354.jpg",
+                "https://te.legra.ph/file/d0836180ec6964821396e.jpg",
                 caption=(f"""**Salam {message.from_user.mention} 🎵\nMən Qruplar üçün hazırlanmış musiqi botuyam!\n Bot @Vusaliw Tərəfindən 0dan tərcümə edilib.\n\nSahibim 👉 [Bakılı](https://t.me/o7o_BaKiLi)**"""),
          reply_markup=InlineKeyboardMarkup(
             [
@@ -126,7 +126,7 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən Qruplar üçün hazırlanmış musiqi botuyam.\Bot @Vusaliw Tərəfindən 0dan tərcümə edilib.\n\nSahibim👉  [HÜSÜ](https://t.me/HusuSovetski)**""",
+    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən Qruplar üçün hazırlanmış musiqi botuyam.\Bot @Vusaliw Tərəfindən 0dan tərcümə edilib.\n\nSahibim👉 [Bakılı](https://t.me/o7o_BaKiLi)**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
