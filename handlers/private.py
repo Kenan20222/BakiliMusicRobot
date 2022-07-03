@@ -8,7 +8,7 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://te.legra.ph/file/83ebf1572c23d48e784d6.jpg",
+                "https://telegra.ph/Selam-07-03",
                 caption=(f"""**Salam {message.from_user.mention} 🎵\nMən Qruplar üçün hazırlanmış musiqi botuyam!\n Bot @Vusaliw Tərəfindən 0dan tərcümə edilib.\n\nSahibim 👉 [Vüsal](https://t.me/Vusallldi)**"""),
          reply_markup=InlineKeyboardMarkup(
             [
@@ -19,10 +19,10 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎭 Asistant", url="https://t.me/EngilshChattingAssitant"
-                    ),
+                        "🎭 Asistant", url="https://t.me/Siyahmusicasistant"
+                    )
                     InlineKeyboardButton(
-                        "🔥 Qrup", url="https://t.me/engchannelcomment"
+                        "🔥 Qrup", url="https://t.me/QarabagTeams"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "☄️ Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Sahib 🇦🇿", url=f"https://t.me/Vusallldi"
+                        "Sahib 🇦🇿", url=f"https://t.me/qarabagizim"
                     )
                 ]
                 
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "Geri 🔄", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "Qrup ☘️", url="https://t.me/engchannelcomment")
+                         "Qrup ☘️", url="https://t.me/QarabagTeams")
                  ]
              ]
          )
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "Sahib 🇦🇿", url="https://t.me/vusallldi")
+            "Sahib 🇦🇿", url="https://t.me/qarabagizim")
         ]
       ]
      ))
@@ -95,7 +95,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "Sahib 🇦🇿", url="https://t.me/vusallldi")
+                         "Sahib 🇦🇿", url="https://t.me/qarabagizim")
                  ],
                  [
                      InlineKeyboardButton(
@@ -113,7 +113,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "Qrup ⛓️", url="https://t.me/engchannelcomment")
+                         "Qrup ⛓️", url="https://t.me/QarabagTeams")
                  ],
                  [
                      InlineKeyboardButton(
@@ -136,10 +136,10 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎭 Asistant", url="https://t.me/EngilshChattingAssitant"
+                        "🎭 Asistant", url="https://t.me/Siyahmusicasistant"
                     ),
                     InlineKeyboardButton(
-                        "⚡ Qrup", url="https://t.me/engchannelcomment"
+                        "⚡ Qrup", url="https://t.me/QarabagTeams"
                     )
                 ],
                 [
@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "☄️ Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Sahib 🇦🇿", url=f"https://t.me/vusallldi"
+                        "Sahib 🇦🇿", url=f"https://t.me/qarabagizim"
                     )
                 ]
                 
