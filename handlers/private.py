@@ -8,7 +8,7 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://telegra.ph/Selam-07-03",
+                "https://te.legra.ph/file/6a98b64bbdf7e60845729.jpg",
                 caption=(f"""**Salam {message.from_user.mention} 🎵\nMən Qruplar üçün hazırlanmış musiqi botuyam!\n Bot @qarabagizim Tərəfindən 0dan tərcümə edilib.\n\nSahibim 👉 [Qarabag](https://t.me/Qarabagizim)**"""),
          reply_markup=InlineKeyboardMarkup(
             [
